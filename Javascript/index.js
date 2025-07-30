@@ -66,7 +66,7 @@ backgroundCanvas.height = window.innerHeight;
 if (window.OffscreenCanvas && backgroundCanvas.transferControlToOffscreen) {
     try {
         const offscreen = backgroundCanvas.transferControlToOffscreen();
-        new Worker('/Javascript/background.js').postMessage({type: 'init', canvas: offscreen, width: backgroundCanvas.width, height: backgroundCanvas.height}, [offscreen]);
+        new Worker('Javascript/background.js').postMessage({type: 'init', canvas: offscreen, width: backgroundCanvas.width, height: backgroundCanvas.height}, [offscreen]);
     } catch (err) {loadFallbackScript();}
 } else {loadFallbackScript();}
 function loadFallbackScript() {
