@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/CHH.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/STIX.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/STIX_I.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Dheirya Tyagi's Portfolio</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_57,w_57/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_114,w_114/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_72,w_72/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_144,w_144/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_60,w_60/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_120,w_120/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_76,w_76/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_152,w_152/v1618617714/unnamed-2_jtb947.jpg" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_196,w_196/v1618617714/unnamed-2_jtb947.jpg" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_96,w_96/v1618617714/unnamed-2_jtb947.jpg" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_32,w_32/v1618617714/unnamed-2_jtb947.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_16,w_16/v1618617714/unnamed-2_jtb947.jpg" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_128,w_128/v1618617714/unnamed-2_jtb947.jpg" sizes="128x128" />
+    <meta name="application-name" content="Dheirya Tyagi's Portfolio" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta name="msapplication-TileImage" content="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_144,w_144/v1618617714/unnamed-2_jtb947.jpg" />
+    <meta name="msapplication-square70x70logo" content="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_70,w_70/v1618617714/unnamed-2_jtb947.jpg" />
+    <meta name="msapplication-square150x150logo" content="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_150,w_150/v1618617714/unnamed-2_jtb947.jpg" />
+    <meta name="msapplication-wide310x150logo" content="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_150,w_310/v1618617714/unnamed-2_jtb947.jpg" />
+    <meta name="msapplication-square310x310logo" content="https://res.cloudinary.com/dpoer5oaq/image/upload/c_scale,h_310,w_310/v1618617714/unnamed-2_jtb947.jpg" />
+    <meta name="title" content="Dheirya Tyagi's Portfolio"/>
+    <meta name="description" content="My name is Dheirya Tyagi, and I've made some cool projects! Here are "/>
+    <meta name="keywords" content="dheirya tyagi, dheirya, tyagi, dheirya tyagi links, links dheirya, links, link dheirya tyagi" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Dheirya Tyagi" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: #5B8DA8;
+            background: linear-gradient(180deg, rgba(91, 141, 168, 1) 0%, rgba(143, 187, 196, 1) 50%, rgba(191, 206, 199, 1) 100%);
+            background-attachment: fixed;
+        }
+        #main-hero {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: left;
+        }
+        #main-text {
+            flex: 2;
+            padding: 20px;
+            margin-left: 7.5vw;
+            opacity: 0;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+        #main-text.loaded {
+            opacity: 1;
+        }
+        #main-text h1 {
+            font-size: 6.4vw;
+            font-family: 'Cooper Hewitt Heavy', sans-serif;
+            line-height: 1.2;
+            margin-bottom: -10px;
+        }
+        #main-text h2 {
+            font-size: 2.7vw;
+            font-family: 'STIX Two Text', sans-serif;
+            line-height: 0.35;
+            color: #fdfdfb !important;
+        }
+        #main-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 7.5vw;
+        }
+        #model-wrapper {
+            position: relative;
+            width: 40vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #model-wrapper model-viewer {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: relative;
+            overflow: visible;
+            --progress-bar-color: transparent;
+            transform: scale(0.01);
+            opacity: 0;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease-out;
+            will-change: transform, opacity;
+        }
+        #model-wrapper model-viewer.loaded {
+            transform: scale(1);
+            opacity: 1;
+        }
+        #model-wrapper model-viewer.finished {
+            transition: 0.3s;
+        }
+        #vine {
+            position: absolute;
+            top: 70%;
+            width: calc(100% + 15vw);
+            pointer-events: none;
+            z-index: 1;
+        }
+        .italicize {
+            font-style: italic;
+            font-weight: 400;
+        }
+        .maker {
+            color: #05377b;
+        }
+        .letter {
+            display: inline-block;
+            transition: transform 0.2s ease-in-out;
+            transform-origin: center;
+        }
+        #background {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+        #main-hero, #main-text {
+            z-index: 9;
+        }
+        #projects {
+            max-width: 70vw;
+            margin: 0 auto 0 auto;
+            padding-right: 12.5vw;
+            position: relative;
+            z-index: 3;
+        }
+        .project-box {
+            position: relative;
+            width: 65%;
+            background: rgba(243 233 213);
+            color: rgb(52, 52, 52);
+            padding: 30px 25px;
+            margin: 50px 0 200px 0;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.25);
+            font-family: 'STIX Two Text', serif;
+            font-size: 1.4vw;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-align: left;
+            z-index: 3;
+            will-change: transform;
+            contain: layout;
+        }
+        .project-box.left {
+            margin-left: 0;
+            margin-right: auto;
+        }
+        .project-box.right {
+            margin-left: 35%;
+            margin-right: auto;
+        }
+        .project-box h1 {
+            margin: -10px 0 0 0;
+        }
+        .gallery {
+            margin-top: 7.5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 10px;
+            margin-bottom: -5px;
+        }
+        .buttons button {
+            background: #05377b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1vw;
+            font-weight: bold;
+            flex: 1;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .buttons button:hover {
+            background: #0a4b9f;
+            transform: scale(1.01);
+        }
+        .source {
+            background: #4CAF50 !important;
+        }
+        .source:hover {
+            background: #45a049 !important;
+        }
+        .project-box p {
+            margin: 5px 0 0 0;
+        }
+        .tags {
+            margin-top: 10px;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0e0e0;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 0.9vw;
+        }
+        .fix {
+            margin: 0 !important;
+        }
+        .title-date {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: -10px;
+        }
+        .title-date .date {
+            font-size: 1.1vw;
+            color: #666;
+            margin: 0;
+            white-space: nowrap;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 12.5px;
+            width: 50px;
+            height: 50px;
+        }
+        .social-icons a img:hover {
+            transform: scale(1.1);
+        }
+        .social-icons a img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .gallery {
+            display: flex;
+            gap: 2px;
+            margin: 10px 0 15px 0;
+            height: 13vw;
+        }
+        .gallery-item {
+            position: relative;
+            flex: 1;
+            height: auto;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            border: 2px #000 solid;
+            background-color: #dbd2c0;
+        }
+        .gallery-item:hover {
+            transform: scale(0.98);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .more-images-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3vw;
+            font-weight: bold;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            font-family: 'Cooper Hewitt Heavy', sans-serif;
+        }
+        @font-face {
+            font-family: 'Cooper Hewitt Heavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 713;
+            src: local('Cooper Hewitt Heavy'), url('https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/CHH.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'STIX Two Text';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400 700;
+            src: url('https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/STIX.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'STIX Two Text';
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400 700;
+            src: url('https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Fonts/STIX_I.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        .glightbox-clean .gclose, .glightbox-clean .gnext, .glightbox-clean .gprev {
+            background-color:rgba(0, 0, 0, .7) !important;
+        }
+        .glightbox-clean:hover, .gclose:hover, .gnext:hover, .gprev:hover {
+            background-color:rgba(0, 0, 0, .95) !important;
+        }
+        @media (max-width: 1200px) {
+            #main-text h1 {
+                font-size: 6.4vw;
+            }
+            .project-box {
+                width: 75%;
+                font-size: 1.6vw;
+            }
+            .buttons button {
+                font-size: 1.2vw;
+            }
+            .tag {
+                font-size: 1vw;
+            }
+            .title-date .date {
+                font-size: 1.2vw;
+            }
+            .more-images-overlay {
+                font-size: 3.4vw;
+            }
+        }
+        @media (max-width: 992px) {
+            #main-text h1 {
+                font-size: 6.6vw;
+            }
+            #main-text h2 {
+                font-size: 2.8vw;
+            }
+            #main-text {
+                margin-left: 5vw;
+            }
+            .social-icons a {
+                width: 35px;
+                height: 35px;
+            }
+            .project-box {
+                width: 85%;
+                font-size: 1.9vw;
+            }
+            .project-box.right {
+                margin-left: 25%;
+            }
+            .buttons button {
+                font-size: 1.5vw;
+            }
+            .tag {
+                font-size: 1.3vw;
+            }
+            .title-date .date {
+                font-size: 1.5vw;
+            }
+            .more-images-overlay {
+                font-size: 3.7vw;
+            }
+            #vine {
+                top: 60%;
+            }
+        }
+        @media (max-width: 768px) {
+            #main-hero {
+                flex-direction: column;
+                align-items: center;
+            }
+            #main-text {
+                width: 90%;
+                text-align: center;
+                margin-top: 0;
+            }
+            #main-text h1 {
+                font-size: 11vw;
+            }
+            #main-text h2 {
+                font-size: 4.3vw;
+            }
+            .social-icons a {
+                width: 50px;
+                height: 50px;
+            }
+            #main-img {
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -30%;
+            }
+            #model-wrapper {
+                width: 80vw;
+            }
+            #maker-bottom-tagline {
+                display: none
+            }
+            #projects {
+                max-width: 100vw;
+                padding: 0;
+                margin: 0;
+            }
+            .project-box {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 2.4vw;
+            }
+            .project-box.left, .project-box.right {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .gallery {
+                height: 26vw;
+            }
+            .buttons button {
+                font-size: 2.1vw;
+            }
+            .tag {
+                font-size: 1.8vw;
+            }
+            .title-date .date {
+                font-size: 2.3vw;
+            }
+            .more-images-overlay {
+                font-size: 4.2vw;
+            }
+        }
+        @media (max-width: 576px) {
+            #main-text h1 {
+                font-size: 13vw;
+            }
+            #main-text h2 {
+                font-size: 6vw;
+            }
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+            }
+            #model-wrapper {
+                width: 100vw;
+            }
+            .date, .tag, .gallery div:nth-of-type(2) {
+                display: none;
+            }
+            .gallery {
+                height: 52vw;
+            }
+            .project-box {
+                font-size: 5vw;
+            }
+            .buttons {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .buttons button {
+                font-size: 5vw;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div id="main-hero">
+        <div id="main-text">
+            <h1 id="container-name"><span>Hey, I'm</span><br/><span id="name" class="maker">Dheirya&nbsp;Tyagi</span></h1>
+            <h2 id="maker-tagline">And I've grown a lot as a <span>maker</span>.</h2>
+            <h2 id="maker-bottom-tagline" class="italicize">Ready to explore, Jack?</h2>
+            <div class="social-icons">
+                <a href="https://github.com/Dheirya" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/github2.webp" alt="GitHub"></a>
+                <a href="https://www.youtube.com/@dheirya" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/youtube.webp" alt="YouTube"></a>
+                <a href="https://instagram.com/DheiryaTyagi" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/instagram.webp" alt="Instagram"></a>
+                <a href="https://replit.com/@dheiryat" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/replit.webp" alt="Replit"></a>
+                <a href="#" onclick="Swal.fire({title: 'Contact Me', text: 'Feel free to contact me at hello@dheirya.com', icon: 'info'})"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/email.webp" alt="Email"></a>
+            </div>
+        </div>
+        <div id="main-img">
+            <div id="model-wrapper">
+                <model-viewer min-camera-orbit="-720deg 90deg auto" max-camera-orbit="720deg 90deg auto" disable-zoom disable-tap disable-pan camera-controls id="model" src="/models/castle-Optimized.glb" orientation="0deg 0deg 0deg" loading="eager"></model-viewer>
+                <canvas id="vine"></canvas>
+            </div>
+        </div>
+    </div>
+    <section id="projects">
+        <div class="project-box left">
+            <div class="title-date"><h1>Simple E<sup>x</sup>planations</h1><p class="date">~ June 2025</p></div>
+            <i>When we make learning simple, we make opportunity possible for all</i>
+            <div id="g1" class="gallery"></div>
+            <p>A website for my education initiative, <i>Simple Explanations</i>. On this site, I have all my videos displayed, a mission statement, and an about statement. The website also hosts tools like an AI video quiz generator, a STEM resource bank, a feedback form, and more!</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">JS</span><span class="tag">CSS</span><span class="tag">APIs</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://simplexp.org')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/simple-explanations')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">BHS Tech Club Website</h1><p class="date fix">~ May 2025</p></div>
+            <i>BHS's hub for cool engineering projects and STEM outreach</i>
+            <div id="g2" class="gallery"></div>
+            <p>A website for our school club, the <i>BHS Tech & Robotics Club</i>. On this site, I have all of our projects displayed, photos from events, a comment section, likes, search bar, STEM resources, and a contact form.</p>
+            <div class="tags"><span class="tag">Django</span><span class="tag">SQLite</span><span class="tag">JSON</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://bhstech.club')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/BHS-Tech-Robotics-Club-Website')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">DaWaze</h1><p class="date fix">~ April 2025</p></div>
+            <i>A fun routing game inspired by GeoGuessr</i>
+            <div id="g3" class="gallery"></div>
+            <p>A game I helped to build in 24hrs for the RidgeHacks Hackathon. Using data from OSRM, we created a game where users have to guess a driving route that has the same navigational time as a hidden route. We won second place overall for this project.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">Mapbox</span><span class="tag">OSRM</span><span class="tag">APIs</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://www.youtube.com/watch?v=JbdqKpKArpM')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/DaWaze')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">ThinkTales</h1><p class="date fix">~ April 2025</p></div>
+            <i>Learn new things through a fun story adventure</i>
+            <div id="g4" class="gallery"></div>
+            <p>A tool I built to help young children learn through a personalized educational adventure. To use the tool, the user inputs what they want to learn and what they want their story to be about. Then, the AI generates a story and segways into a multiple choice question testing the user.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">AI</span><span class="tag">JS</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://www.youtube.com/watch?v=FA9hQ6gMCP0')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/ThinkTales')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">Innokit Vision</h1><p class="date fix">~ January 2025</p></div>
+            <i>An Arduino-based handheld video game console</i>
+            <div id="g5" class="gallery"></div>
+            <p>A handheld gaming console I made using Arduino. The console has a menu screen that allows users to select from 8 games: Snake, Pong, Flappy Bird, 2048, Simon Says, Chrome Dino, Drawing App, and a Joke App.</p>
+            <div class="tags"><span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">CAD</span><span class="tag">Graphics</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://www.youtube.com/watch?v=Jg4Uep8txrE')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/InnokitVision')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">FastLingo</h1><p class="date fix">~ September 2024</p></div>
+            <i>Learn a new language quick thru reading</i>
+            <div id="g6" class="gallery"></div>
+            <p>A website I built to help people learn a language through reading. The user inputs an article URL, and the tool extracts the text and translates some words to the target language. There is also a vocab list and memory quiz. Won the Global Impact Award in the Congressional App Challenge.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">Scraping</span><span class="tag">BeautifulSoup4</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://www.youtube.com/watch?v=JCzjd4akr_M')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/FastLingo')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">Social Rumbles</h1><p class="date fix">~ May 2024</p></div>
+            <i>A full stack social media site with 1.3k+ users and 1m+ post views</i>
+            <div id="g7" class="gallery"></div>
+            <p>A website I developed throughout the Pandemic to help connect people. On the website, users can post videos/blogs/images, chat with other users, comment/reply, like/dislike, follow, play games, personalize the look, search, use hashtags, and so much more!</p>
+            <div class="tags"><span class="tag">Django</span><span class="tag">Websockets</span><span class="tag">Redis</span><span class="tag">SQLite</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://socialrumbles.com/home/')">Open</button>
+                <button onclick="Swal.fire({title: 'Source Code', text: 'If you would like to have the source code for educational purposes, please contact me at hello@dheirya.com'})" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">TalkGPT</h1><p class="date fix">~ November 2023</p></div>
+            <i>A GPT wrapper using voice commands and control</i>
+            <div id="g8" class="gallery"></div>
+            <p>A voice-to-voice AI chatbot where users can chat with a genie powered by GPT. Features include custom voices, personalities, and real-time speech.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">Speech Recognition</span><span class="tag">RAG</span><span class="tag">GPT</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://replit.com/@dheiryat/TalkGPT-Talking-Genie-Personal-Talker?v=1')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/TalkGPT')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">PlayVibes.js</h1><p class="date fix">~ June 2023</p></div>
+            <i>A JS plugin that adds a music player to a website</i>
+            <div id="g9" class="gallery"></div>
+            <p>A lightweight JavaScript plugin that allows developers to easily add a customizable music player to their web page using YouTube's iframe API.</p>
+            <div class="tags"><span class="tag">JS</span><span class="tag">Iframe</span><span class="tag">HTML</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://dheirya.github.io/PlayVibes.js/')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/PlayVibes.js')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">MeloVybs</h1><p class="date fix">~ May 2023</p></div>
+            <i>A music bot that creates piano covers from songs</i>
+            <div id="g10" class="gallery"></div>
+            <p>An automated Python script that generates piano covers from songs using ByteDance's PianoTranscription machine learning model.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">AI</span><span class="tag">Pillow</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://youtube.com/@MeloVybs')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/MeloVybs-Bot')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">Romeo & Juliet Project</h1><p class="date fix">~ Feburary 2023</p></div>
+            <i>A website for an English project in school</i>
+            <div id="g12" class="gallery"></div>
+            <p>A website I made for my English class freshmen year. It is a dictionary project containing quotes from Romeo & Juliet.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://romeojuliet.vercel.app/')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/RomeoJulietSchoolProj')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">RagePlatformer</h1><p class="date fix">~ December 2022</p></div>
+            <i>A 3D platformer with an interesting camera mechanic</i>
+            <div id="g11" class="gallery"></div>
+            <p>A game where the objective is to navigate a platform in the sky to collect coins. However, the challenge is the camera rapidly switches orientations.</p>
+            <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Modeling</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://rageplatformer.vercel.app/')">Open</button>
+                <button onclick="openURL('https://replit.com/@dheiryat/RagePlatformer-A-Basic-3D-Platformer-With-a-Twist?v=1')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">Golden Temple CSS Art</h1><p class="date fix">~ August 2022</p></div>
+            <i>A digital drawing of the Golden Temple using pure CSS</i>
+            <div id="g13" class="gallery"></div>
+            <p>A CSS art piece depicting the Golden Temple. During my trip to India, I went to the Golden Temple and was inspired to make this project!</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://goldentemple.vercel.app/')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/Golden-Temple-Pure-CSS-Art')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1 class="fix">Arduino Music Player</h1><p class="date fix">~ March 2022</p></div>
+            <i>An Arduino-based music player</i>
+            <div id="g14" class="gallery"></div>
+            <p>A handheld music player I made while tinkering around with Arduino. It plays over ten songs and has a small menu screen.</p>
+            <div class="tags"><span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">Music</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://socialrumbles.com/p/arduino-lcd-music-player-230/')">Open</button>
+                <button onclick="openURL('https://github.com/Dheirya/Arduino-Music-Player-Jukebox')" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box left">
+            <div class="title-date"><h1 class="fix">Covid-19 Vaccine Finder</h1><p class="date fix">~ November 2021</p></div>
+            <i>A website that used to locate available vaccine appointment centers</i>
+            <div id="g15" class="gallery"></div>
+            <p>One of the first CS projects I ever published! Recognizing the need for an easier vaccine locating system, I made this site.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">JS</span><span class="tag">APIs</span></div>
+            <div class="buttons">
+                <button onclick="openURL('https://web.archive.org/web/20211207023229/https://vaccine4u.info/#')">Open</button>
+                <button onclick="Swal.fire({title: 'Source Code', text: 'This source code has been lost to time :('})" class="source">Source</button>
+            </div>
+        </div>
+        <div class="project-box right">
+            <div class="title-date"><h1>And many more projects...</h1></div>
+            <p>Unfortunately, I can't possibly get every project I've ever made on this site. Some other projects are available on my <a href="https://github.com/Dheirya" target="_blank">GitHub</a>, <a href="https://replit.com/@dheiryat" target="_blank">Replit</a>, or are sadly lost to time.<br/><br/>With this website, I hope you got a short glimpse into my maker journey and some of the cool things I've made using technology :)</p>
+        </div>
+    </section>
+    <canvas id="background"></canvas>
+    <script src="/Javascript/main.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+    <script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
