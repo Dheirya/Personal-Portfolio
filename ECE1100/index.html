@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dheirya Tyagi | Plain Text Portfolio</title>
+    <meta name="description" content="Plain Text Portfolio of Dheirya Tyagi, Computer Engineering student at Georgia Tech.">
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #5a5a5a;
+            --bg: #ffffff;
+            --rule: #dddddd;
+            --link: #0645ad;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #e6e6e6;
+                --muted: #a0a0a0;
+                --bg: #161616;
+                --rule: #333333;
+                --link: #8ab4f8;
+            }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0 auto;
+            padding: 2rem 1.25rem 4rem;
+            max-width: 60rem;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 18px;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--bg);
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 .25rem;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 1.35rem;
+            margin: 3rem 0 .75rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--rule);
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin: 1.75rem 0 .5rem;
+        }
+        p, ul {
+            margin: 0 0 1rem;
+        }
+        a {
+            color: var(--link);
+        }
+        a:focus-visible {
+            outline: 2px solid var(--link);
+            outline-offset: 2px;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin: 0 0 1.5rem;
+        }
+        nav {
+            margin-bottom: 1rem;
+        }
+        nav a {
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        figure {
+            margin: 1.5rem 0;
+        }
+        figcaption {
+            font-size: .9rem;
+            color: var(--muted);
+            margin-top: .4rem;
+        }
+        .resume-frame {
+            width: 100%;
+            height: 80vh;
+            border: 1px solid var(--rule);
+        }
+        .project-menu a {
+            white-space: nowrap;
+        }
+        .project {
+            border: 1px solid var(--rule);
+            border-left: 4px solid var(--link);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+        }
+        .project h3 {
+            font-size: 1.4rem;
+            margin: 0 0 .25rem;
+        }
+        .project-meta {
+            color: var(--muted);
+            font-size: .95rem;
+            margin: 0 0 1rem;
+        }
+        .project h4 {
+            font-size: .95rem;
+            color: var(--muted);
+            margin: 1.25rem 0 .25rem;
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid var(--link);
+            padding: .5rem 1rem;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .project {
+                padding: 1rem;
+            }
+        }
+        footer {
+            margin-top: 3rem;
+            font-size: .9rem;
+            color: var(--muted);
+        }
+        img {
+            max-width: 20rem;
+        }
+        #welcome {
+            display: grid;
+            grid-template-columns: 1fr 14rem;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--rule);
+        }
+        #welcome h2 {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+        .welcome-text p:last-child {
+            margin-bottom: 0;
+        }
+        .welcome-photo {
+            position: relative;
+            margin: 0;
+        }
+        .welcome-photo img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            object-fit: cover;
+        }
+        @media (max-width: 600px) {
+            #welcome {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .welcome-photo {
+                order: -1;
+            }
+            .welcome-photo img {
+                position: static;
+                width: 100%;
+                max-width: 12rem;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Dheirya Tyagi</h1>
+    <p class="subtitle">Computer Engineering Student at Georgia Tech</p>
+    <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#goals">Career Goals</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<main>
+    <section id="welcome">
+        <div class="welcome-text">
+            <h2>Welcome</h2>
+            <p>Hi! I’m Dheirya, a first-year Computer Engineering student at Georgia Tech graduating in May 2029.</p>
+            <p>I enjoy building hardware and software projects that solve real problems. My long-term goal is to build a technology company that creates products with meaningful impact at scale.</p>
+            <p>This site collects my projects and experience. Feel free to look around or reach out through the contact section below.</p>
+        </div>
+        <figure class="welcome-photo">
+            <img src="images/headshot.jpg" alt="Headshot of Dheirya Tyagi">
+        </figure>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>On my twelfth birthday, I expected another Lego set. Instead, I got an Arduino kit. With no colorful pieces or step-by-step instructions, I was underwhelmed at first. But when I built my first creation, an automatic trashcan made from a milk carton and an ultrasonic sensor, I realized what I had stumbled upon. This wasn’t a toy. It was a tool to make anything I dreamed. I spent the whole pandemic inventing things like an “anti-parent” room alarm and a music player rivaling the iPod with eleven whole songs. I even taught myself web development to build Social Rumbles, a social platform that connected over 1,300 students.</p>
+        <p>I came to Georgia Tech for its threads curriculum and its maker culture. Within my first semester, I joined the electrical subteam of the Marine Robotics Group, where I wire and integrate eight thrusters and a custom power distribution board for an autonomous underwater vehicle competing in RoboSub.</p>
+        <p>Outside of class, I run Simple Explanations, a STEM education initiative I founded in high school. What started as a few videos has grown to 370+ videos reaching over 7.5 million students across YouTube and TikTok, plus a study platform with crowdsourced notes and adaptive quizzes. I also serve as Communications Coordinator for the Peterson Residence Hall, where I’m building an RSVP app to improve attendance. Making videos taught me something I bring to every project: if people can’t understand what you built, it doesn’t matter how well it works.</p>
+        <p>What sets me apart is that I build things and then share them. From BernBox, a six-foot arcade cabinet that took two years to finish, to Optic Prime, a haptic navigation aid that won first out of 30+ teams, every project I make is public with its code and models. I believe engineering is a deeply human field. We make for others, and real engineering isn’t just about solving problems; it’s about making others believe they can too.</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a target="_blank" class="btn" href="resume.pdf" download>Download my resume (PDF)</a></p>
+        <iframe class="resume-frame" src="resume.pdf" title="Resume of Dheirya Tyagi"></iframe>
+    </section>
+    <section id="goals">
+        <h2>Career Goals</h2>
+        <p>In 10 years, I want to be leading a tech company that creates products with meaningful impact at scale. I aim to work in the robotics and automation industry, focusing on developing innovative solutions for agriculture and other sectors that can benefit from automation. My goal is to tackle complex problems that improve the human condition through advanced robotics and intelligent systems.</p>
+        <h3>How I’ll get there</h3>
+        <ul>
+            <li><strong>Coursework:</strong> I’m pursuing the Robotics and Distributed Systems & Software Design threads, and I plan to graduate in three years. Key classes include ECE 3550 Feedback Control Systems, ECE 4560 Intro to Automation & Robotics, ECE 4180 Embedded Systems Design, and ECE 4252 Fundamentals of Machine Learning. I’m also taking Startup Lab and Technology Entrepreneurship to build the business side.</li>
+            <li><strong>Experience:</strong> I’m aiming for a startup internship the summer after my first year to see how a small team ships real products. After that, I’ll target embedded systems and firmware internships at larger companies to learn how hardware is built and tested at scale.</li>
+            <li><strong>Involvement:</strong> I’m on the electrical subteam of the Marine Robotics Group building a RoboSub vehicle, and I plan to join the GTRI Agricultural Robotics VIP team. Later, I want to take an idea through Create-X’s I2P program, compete in the InVenture Prize, and mentor younger students the way upperclassmen have helped me.</li>
+            <li><strong>After graduation:</strong> I’ll either work full-time on a startup that grows out of Create-X or join an embedded systems role. Either path builds toward founding a company that brings robotics and automation in an innovative way.</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <p class="project-menu">
+            <a href="#discovery-project">Discovery Project</a> ·
+            <a href="#bernbox">BernBox</a> ·
+            <a href="#optic-prime">Optic Prime</a>
+        </p>
+        <article id="discovery-project" class="project">
+            <h3>Discovery Project: Braitenberg Light-Seeking Vehicle</h3>
+            <p class="project-meta">Fall 2026 · Built in the Hive Makerspace · PCB Design, PCB Fabrication, Analog Circuits, Soldering</p>
+            <h4>The problem</h4>
+            <p>Almost every hardware project I had built before Georgia Tech ran on a microcontroller. When something went wrong, I fixed it in code. For my Discovery Project, I wanted to learn the skills underneath that layer: how to design a circuit that makes decisions on its own, and how to turn that design into a physical printed circuit board.</p>
+            <p>A Braitenberg vehicle was the perfect challenge. These simple robots show seemingly intelligent behavior, like chasing light, using nothing more than direct connections between sensors and motors. My goal was to build one that seeks out light with zero firmware and no microcontroller, controlled entirely by an analog circuit on a PCB I designed and fabricated myself.</p>
+            <h4>The process</h4>
+            <p>The core of the design is two photoresistors, one on each side of the vehicle. A photoresistor’s resistance drops as light increases, so placing each one in a voltage divider produces a voltage that rises with brightness. That voltage drives the gate of a MOSFET, which controls how much current flows to a motor. More light means a faster motor.</p>
+            <p>The key decision was cross-coupling: the left sensor drives the right motor, and the right sensor drives the left motor. When light hits the left side, the right motor speeds up and the vehicle turns left, toward the light. Because motor speed scales with brightness, the steering is proportional. The vehicle turns sharply when the light is far to one side and drives straight when the light is directly ahead. I also added flyback diodes across each motor to protect the MOSFETs from the voltage spikes motors produce when they switch off.</p>
+            <figure>
+                <img src="images/BB1.JPG" alt="The PCB fresh from the LPKF laser.">
+                <figcaption>The PCB fresh from the LPKF laser.</figcaption>
+            </figure>
+            <p>After testing the circuit, I laid out a two-layer PCB in KiCad and fabricated it in-house, using the LPKF laser to etch the traces and the ProtoMat to drill the holes. I then soldered the components, continuity-tested every connection, and mounted the board and motors to a chassis with custom 3D-printed PETG mounts. One challenge I faced was tuning the resistor value. It ended up being not sensitive enough to light, which I fixed by de-soldering the old resistor and calculating a better value.</p>
+            <h4>The outcome</h4>
+            <p>The finished vehicle autonomously tracks and drives toward a light source, steering proportionally with no code at all. It behaves best in rooms with some light.</p>
+            <figure>
+                <img src="images/BB2.JPG" alt="The finished vehicle.">
+                <figcaption>The finished vehicle.</figcaption>
+            </figure>
+            <h4>What I learned</h4>
+            <p>This project changed how I think about hardware. Behavior I would normally write as an if-statement emerged from a few resistors, transistors, and the way they were wired together. I learned the full PCB workflow, from schematic to layout to fabrication, and I gained hands-on experience with the Hive’s fabrication tools. These are the same skills I now use on Georgia Tech’s RoboSub team.</p>
+        </article>
+        <article id="bernbox" class="project">
+            <h3>BernBox Arcade Machine</h3>
+            <p class="project-meta">2024–2025 · Built with Lucian Spiteri and Tech & Robotics Club members · Raspberry Pi, Recalbox, woodworking, soldering</p>
+            <h4>The problem</h4>
+            <p>We needed an engaging, beginner-friendly project that would get “non-STEM” students excited about engineering at my high school.</p>
+            <h4>The process</h4>
+            <p>Starting from a small 3D-printed design, I built the six-foot-four cabinet with my friend Lucian in his garage, with help from our woodworking teacher on advanced tools. I wired and soldered HAPP-style buttons and joysticks through a USB encoder board and configured Recalbox on a Raspberry Pi. The two-year build involved countless small decisions: a back access door secured with a locker lock so we could make repairs while keeping the components protected, and a Christmas timer on the outlet to power the machine on and off automatically.</p>
+            <figure>
+                <img src="https://dheirya.com/Images/Compressed/AMG10.webp" alt="BernBox cabinet frame under construction in a garage">
+                <figcaption>One of the earliest photos of the frame, on one of many summer days we worked until dark.</figcaption>
+            </figure>
+            <h4>The outcome</h4>
+            <p>BernBox runs 50+ games across two full control sets and stands in my school’s library for daily use. It also brought together many people into a STEM project. When the Art Club was unavailable, a senior I didn’t know offered to paint it, and a cascade of students joined, many of whom never thought they could contribute to a “STEM” project.</p>
+            <figure>
+                <img src="https://dheirya.com/Images/Compressed/AMG2.webp" alt="Finished red BernBox arcade cabinet in the school library">
+                <figcaption>BernBox on its first day in the library.</figcaption>
+            </figure>
+            <h4>What I learned</h4>
+            <p>Innovation is never the result of a single field or a single person. I doubt BernBox would be as popular without the paintings on its exterior. I also learned to accept my lack of woodworking expertise and ask for help early.</p>
+        </article>
+        <article id="optic-prime" class="project">
+            <h3>Optic Prime</h3>
+            <p class="project-meta">Fall 2025 · BRHacks hackathon with Joseph and Lucian · Arduino, C++, ultrasonic sensors, servos</p>
+            <h4>The problem</h4>
+            <p>Visually impaired people often struggle to detect obstacles and stairs while navigating indoors. At a medical-themed hackathon, our team set out to build a low-cost wearable aid in about 12 hours.</p>
+            <h4>The process</h4>
+            <p>I handled most of the electronics and programming. We used two ultrasonic sensors, one facing forward for obstacles and one facing down for stairs, each driving its own servo to tap the user with haptic feedback. I wrote C++ firmware to filter noisy sensor readings and tuned the thresholds by testing with volunteers.</p>
+            <figure>
+                <img src="https://dheirya.com/Images/Compressed/OP2.webp" alt="The device on my friend Joseph.">
+                <figcaption>The device on my friend Joseph.</figcaption>
+            </figure>
+            <h4>The outcome</h4>
+            <p>Optic Prime gives graded feedback for obstacles between 0.5 and 3 meters. It won first place overall out of 30+ teams. <a target="_blank" href="https://youtu.be/3BihSdtkK5s">Watch the demo</a> or <a target="_blank" href="https://github.com/Dheirya/optic-prime">view the code</a>.</p>
+            <h4>What I learned</h4>
+            <p>Real users reveal real problems. Field testing changed our thresholds more than any amount of calculations could.</p>
+        </article>
+        <p><a target="_blank" class="btn" href="https://dheirya.com">See my full project portfolio</a></p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, Java, C++, SQL, MATLAB, HTML/CSS/JavaScript</li>
+            <li><strong>Hardware:</strong> Arduino, ESP32, Raspberry Pi, PCB Design, PCB Fabrication, Motor Control, Soldering, CAD</li>
+            <li><strong>Software & Tools:</strong> Git, Linux, FastAPI, Django, ROS, OpenCV, MediaPipe, PostgreSQL</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a target="_blank" href="mailto:dtyagi33@gatech.edu">dtyagi33@gatech.edu</a></li>
+            <li>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/dheiryatyagi">linkedin.com/in/dheiryatyagi</a></li>
+            <li>GitHub: <a target="_blank" href="https://github.com/Dheirya">github.com/Dheirya</a></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>© 2026 Dheirya Tyagi</p>
+</footer>
+</body>
+</html>
