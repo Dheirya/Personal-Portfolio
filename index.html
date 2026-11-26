@@ -263,20 +263,34 @@
             margin: 0;
             white-space: nowrap;
         }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 28px;
+        }
         .social-icons a {
-            display: inline-block;
-            margin-right: 12.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
             width: 50px;
             height: 50px;
+            transition: transform 0.3s ease;
         }
-        .social-icons a img:hover {
+        .social-icons a:hover {
             transform: scale(1.1);
         }
         .social-icons a img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            transition: transform 0.3s ease;
+        }
+        .social-icons a[href*="tiktok"] img {
+            transform: scale(1.35);
+        }
+        .social-icons a[href*="linkedin"] img {
+            transform: scale(0.85);
         }
         .gallery {
             display: flex;
@@ -380,6 +394,10 @@
             #main-text {
                 margin-left: 5vw;
             }
+            .social-icons {
+                gap: 12px;
+                margin-top: 20px;
+            }
             .social-icons a {
                 width: 35px;
                 height: 35px;
@@ -422,6 +440,10 @@
             }
             #main-text h2 {
                 font-size: 4.3vw;
+            }
+            .social-icons {
+                justify-content: center;
+                gap: 18px;
             }
             .social-icons a {
                 width: 50px;
@@ -478,6 +500,9 @@
             #main-text h2 {
                 font-size: 6vw;
             }
+            .social-icons {
+                gap: 14px;
+            }
             .social-icons a {
                 width: 40px;
                 height: 40px;
@@ -517,7 +542,7 @@
                 <a href="https://www.youtube.com/@dheirya" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/youtube.webp" alt="YouTube"></a>
                 <a href="https://tiktok.com/@simple.explanations" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/tiktok.webp" alt="TikTok"></a>
                 <a href="https://instagram.com/DheiryaTyagi" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/instagram.webp" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/dheiryatyagi" target="_blank"><img style="width: 80%" src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/linkedin.webp" alt="Linkedin"></a>
+                <a href="https://www.linkedin.com/in/dheiryatyagi" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/linkedin.webp" alt="Linkedin"></a>
                 <a href="#" onclick="Swal.fire({title: 'Contact Me', text: 'Feel free to contact me at hello@dheirya.com', icon: 'info'})"><img src="https://cdn.jsdelivr.net/gh/Dheirya/New-Portfolio/Images/Compressed/email.webp" alt="Email"></a>
             </div>
         </div>
